@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/form_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/generalBackground"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/generalBackground"
+            android:paddingTop="@dimen/dimen_20"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingBottom="@dimen/dimen_15"
+            android:text="@string/add_course_info_title"
+            android:textColor="@color/dark_gray"
+            android:textStyle="bold"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+        <EditText
+            style="@style/TextInputLayout"
+            android:id="@+id/course_code"
+            android:background="@android:color/transparent"
+            android:hint="@string/add_course_code_hint"
+            android:imeOptions="actionNext"
+            android:padding="@dimen/dimen_15"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/color_cursor"/>
+
+        <include layout="@layout/layout_general_divider"/>
+
+        <EditText
+            style="@style/TextInputLayout"
+            android:id="@+id/course_name"
+            android:background="@android:color/transparent"
+            android:hint="@string/add_course_name_hint"
+            android:imeOptions="actionNext"
+            android:padding="@dimen/dimen_15"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/color_cursor" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/generalBackground"
+            android:paddingTop="@dimen/dimen_25"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingBottom="@dimen/dimen_15"
+            android:text="@string/add_course_grades_title"
+            android:textColor="@color/dark_gray"
+            android:textStyle="bold"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+        <EditText
+            style="@style/TextInputLayout"
+            android:id="@+id/course_min_grade"
+            android:background="@android:color/transparent"
+            android:hint="@string/add_course_min_grade_hint"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:padding="@dimen/dimen_15"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/color_cursor"/>
+
+        <include layout="@layout/layout_general_divider"/>
+
+        <EditText
+            style="@style/TextInputLayout"
+            android:id="@+id/course_max_grade"
+            android:background="@android:color/transparent"
+            android:hint="@string/add_course_max_grade_hint"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:padding="@dimen/dimen_15"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/color_cursor" />
+
+        <include layout="@layout/layout_general_divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_15"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_course_eval_method_title"
+                android:textColor="?android:textColorHint"
+                android:textSize="@dimen/text_16"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/course_radio_round"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/add_course_round_hint"
+                    android:singleLine="true"/>
+
+                <RadioButton
+                    android:id="@+id/course_radio_trunc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/add_course_trunc_hint"
+                    android:singleLine="true"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_general_divider"/>
+
+        <LinearLayout
+            android:id="@+id/option_round_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_15"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_course_round_method_title"
+                android:textColor="?android:textColorHint"
+                android:textSize="@dimen/text_16"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/course_radio_round_up"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/add_course_round_up_hint"
+                    android:singleLine="true"/>
+
+                <RadioButton
+                    android:id="@+id/course_radio_round_down"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/add_course_round_down_hint"
+                    android:singleLine="true"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <EditText
+            style="@style/TextInputLayout"
+            android:id="@+id/course_trunc_decimals"
+            android:background="@android:color/transparent"
+            android:hint="@string/add_course_decimals_quantity"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:padding="@dimen/dimen_15"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/generalBackground">
+
+            <Button
+                android:id="@+id/add_course_button"
+                android:layout_margin="@dimen/dimen_25"
+                android:text="@string/add_course_button"
+                android:stateListAnimator="@null"
+                style="@style/Button.PrimaryColor" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

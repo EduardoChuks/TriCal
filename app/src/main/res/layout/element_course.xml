@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:background="@drawable/general_item_bg_selector"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen_15">
+
+    <TextView
+        android:id="@+id/courseCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:layout_gravity="center_vertical"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="INF000"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_10">
+
+        <TextView
+            style="@style/GeneralTextMedium"
+            android:id="@+id/courseName"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            tools:text="Course Name"/>
+
+        <TextView
+            style="@style/GeneralTextSmall"
+            android:id="@+id/courseFinalGrade"
+            android:layout_marginTop="@dimen/dimen_3"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            tools:text="Course Grade"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/courseArrow"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.05"
+        android:scaleType="center"
+        android:src="@drawable/ic_arrow_right" />
+
+</LinearLayout>

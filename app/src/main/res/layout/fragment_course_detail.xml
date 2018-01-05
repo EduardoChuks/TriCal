@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transition_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/exams_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/generalBackground"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/final_grade_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/course_detail_final_grade"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_18"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/course_final_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_20"
+                    android:textStyle="bold"
+                    tools:text="20"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/layout_general_divider_dark"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:padding="@dimen/dimen_15"
+                android:text="@string/course_detail_grade_title"
+                android:textSize="@dimen/text_18"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:id="@+id/exams_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:padding="@dimen/dimen_15"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/course_detail_formula_title"
+                    android:textSize="@dimen/text_18"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/modify_formula_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_5"
+                    android:src="@drawable/ic_edit"
+                    android:tint="@color/colorPrimaryDark"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dimen_15"
+                android:background="@drawable/background_formula"
+                android:padding="@dimen/dimen_20"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/formula_top_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_14"
+                    tools:text="2Pa + 3Pb + 3Ex1 + 4Ex2"/>
+
+                <ImageView
+                    android:id="@+id/formula_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dark_gray"/>
+
+                <TextView
+                    android:id="@+id/formula_bottom_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_14"
+                    tools:text="12"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

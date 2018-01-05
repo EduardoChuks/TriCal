@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#007db3</color>
+    <color name="colorPrimaryDark">#005476</color>
+    <color name="colorAccent">#ef7113</color>
+    <color name="generalBackground">#e9ebee</color>
+    <color name="disabled">#c6c5c5</color>
+    <color name="menuItemDisabled">#b1ececec</color>
+
+    <color name="shadow">#df00525c</color>
+    <color name="bg_grades">#969696</color>
+    <color name="bg_grades_transparent">#8bbfbfbf</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#a6a6a6</color>
+    <color name="dark_gray">#686868</color>
+    <color name="dark_gray_transparent">#7f6e6e6e</color>
+    <color name="black">#000000</color>
+    <color name="green">#33691e</color>
+    <color name="greenLight">#64dd17</color>
+</resources>

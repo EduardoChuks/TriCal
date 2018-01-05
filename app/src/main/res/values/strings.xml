@@ -1,0 +1,58 @@
+<resources>
+
+    <string name="app_name">TriCal</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="action_filter">Filtrar</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_save">Guardar</string>
+
+    <string name="no_courses_found">No hay cursos registrados</string>
+    <string name="no_institutions_found">No hay centros de estudio registrados</string>
+
+    <string name="dialog_filter_title">Filtrar por</string>
+    <string-array name="dialog_filter_content">
+        <item>Institución</item>
+        <item>Ciclo</item>
+    </string-array>
+    <string name="dialog_add">Añadir</string>
+    <string name="dialog_cancel">Cancelar</string>
+
+    <string name="add_course_code_hint">Código (opcional)</string>
+    <string name="add_course_name_hint">Nombre</string>
+    <string name="add_course_period_hint">Ciclo</string>
+    <string name="add_course_inst_hint">Centro de Estudios</string>
+    <string name="add_course_button">Añadir Curso</string>
+    <string name="add_course_info_title">Información del Curso</string>
+    <string name="add_course_grades_title">Método de Evaluación</string>
+    <string name="add_course_min_grade_hint">Nota mínima para aprobar</string>
+    <string name="add_course_max_grade_hint">Nota máxima obtenible</string>
+    <string name="add_course_eval_method_title">Cómo se promedian las evaluaciones?</string>
+    <string name="add_course_round_method_title">Forma de redondeo</string>
+    <string name="add_course_round_hint">redondear</string>
+    <string name="add_course_trunc_hint">truncar</string>
+    <string name="add_course_round_up_hint">hacia arriba</string>
+    <string name="add_course_round_down_hint">hacia abajo</string>
+    <string name="add_course_decimals_quantity">Número de decimales a truncar</string>
+
+    <string name="course_detail_final_grade">NOTA FINAL</string>
+    <string name="course_detail_config_formula">Configurar Fórmula</string>
+    <string name="course_detail_grade_title">Evaluaciones del Curso</string>
+    <string name="course_detail_formula_title">Fórmula del Curso</string>
+
+    <string name="item_grade_hint">Nota</string>
+
+    <string name="add_institution_button">Añadir nuevo centro de estudios</string>
+    <string name="add_institution_hint">Para añadir un nuevo instituto acceda a la barra de búsqueda y escriba un nombre que no esté en la lista</string>
+
+    <string name="add_exam_hint_name">Nombre de la Evaluación</string>
+    <string name="add_exam_checkbox">Se elimina la menor nota?</string>
+    <string name="add_exam_hint_weight">Peso</string>
+    <string name="add_exam_hint_quantity">Cantidad</string>
+
+    <string name="hint_search">Buscar Elemento</string>
+    <string name="close_content_desc">Cerrar botón</string>
+
+    <string name="transition_course">transition_course</string>
+    <string name="transition_logo">transition_logo</string>
+
+</resources>
